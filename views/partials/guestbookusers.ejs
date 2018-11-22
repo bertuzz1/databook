@@ -1,0 +1,26 @@
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<div class="container">
+  <h2 style="text-align:center; color:rgb(250, 153, 7);">User database info</h2> <br>
+  <div class="listaus">
+    <table>
+
+
+
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+        <th>Date</th>
+        </tr>
+        <% for(var i = 1; i < data.length; i++) { %>
+        <tr>
+          <td><%= data[i].firstname %></td>
+          <td><%= data[i].lastname %></td>
+          <td><%= data[i].age %></td>
+          <td><%= data[i].date %></td>
+      </tr>
+
+      <% } %>
+    </table>
+  </div>
+</div>
